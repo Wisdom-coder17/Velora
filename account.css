@@ -1,0 +1,63 @@
+/* Shared VÉLORA account/about pages */
+.account-shell{width:min(1120px,calc(100% - 48px));margin:auto;padding:70px 0 85px}
+.account-eyebrow{color:var(--accent);font-size:9px;letter-spacing:.22em;font-weight:600;margin:0 0 14px}
+.account-title{font:400 clamp(38px,5vw,62px)/1.08 var(--serif);letter-spacing:-.045em;margin:0}
+.account-subtitle{color:var(--muted);font-size:12px;line-height:1.8;max-width:460px}
+.account-link{border-bottom:1px solid var(--ink);padding-bottom:3px}
+.account-layout{display:grid;grid-template-columns:1fr 1fr;min-height:560px;background:#e9e1d5}
+.account-visual{position:relative;min-height:500px;overflow:hidden;background:#333;color:white}
+.account-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,.02) 75%),var(--account-image) center/cover;transition:transform .6s}
+.account-visual:hover:before{transform:scale(1.025)}
+.account-visual-copy{position:absolute;left:9%;right:9%;bottom:9%}
+.account-visual-copy h2{font-size:clamp(35px,4vw,56px);color:white}
+.account-visual-copy p{color:rgba(255,255,255,.84);font-size:11px;line-height:1.8;max-width:330px}
+.account-form-panel{padding:clamp(28px,5vw,66px);display:flex;flex-direction:column;justify-content:center;background:var(--white)}
+.account-form-panel .account-title{font-size:clamp(35px,5vw,48px)}
+.account-form{display:grid;gap:17px;margin-top:28px}
+.form-field{display:grid;gap:8px}
+.form-field label{font-size:10px;font-weight:600}
+.form-field input,.form-field select,.form-field textarea{width:100%;min-height:46px;border:1px solid #d9d2c8;border-radius:0;background:transparent;padding:12px 13px;font:11px var(--sans);color:var(--ink)}
+.form-field textarea{resize:vertical;min-height:95px}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:10px}
+.check-row{display:flex;align-items:flex-start;gap:8px;color:var(--muted);font-size:10px;line-height:1.5}
+.check-row input{accent-color:var(--ink);margin:1px 0 0}
+.form-submit{width:100%;min-height:48px;border:0;background:var(--ink);color:white;cursor:pointer;font-size:10px;letter-spacing:.05em;display:flex;align-items:center;justify-content:center;gap:15px}
+.form-submit:hover{background:#393a35}
+.form-note{color:var(--muted);font-size:10px;line-height:1.7;text-align:center}
+.form-message{display:none;padding:12px;font-size:11px;line-height:1.6;background:#e6e9df;color:#3e5038}
+.form-message.show{display:block}
+.account-switch{text-align:center;color:var(--muted);font-size:10px;margin-top:23px}
+.account-switch a{color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:2px}
+.account-banner{background:#e9e1d5;padding:55px 24px;text-align:center}
+.account-banner .account-subtitle{margin:14px auto 0}
+.profile-layout{display:grid;grid-template-columns:245px 1fr;gap:35px;margin-top:35px;align-items:start}
+.profile-sidebar{padding:25px;background:#e9e1d5}
+.profile-avatar{width:64px;height:64px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font:26px var(--serif);margin-bottom:15px}
+.profile-sidebar h2{font-size:24px}
+.profile-sidebar p{color:var(--muted);font-size:10px;overflow-wrap:anywhere}
+.profile-nav{display:grid;margin-top:25px}
+.profile-nav a,.profile-nav button{padding:13px 0;border:0;border-top:1px solid var(--line);text-align:left;background:transparent;font-size:10px;cursor:pointer}
+.profile-main{background:var(--white);padding:clamp(23px,4vw,42px)}
+.profile-main h2{font-size:32px}
+.profile-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:25px 0}
+.profile-actions{display:flex;flex-wrap:wrap;gap:12px}
+.button-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ink);padding:13px 18px;background:transparent;font-size:10px;cursor:pointer}
+.profile-callout{border:1px solid var(--line);padding:20px;margin-top:28px}
+.profile-callout h3{font:400 22px var(--serif);margin:0 0 8px}
+.profile-callout p{color:var(--muted);font-size:11px;line-height:1.7;margin:0}
+.about-hero{min-height:550px;position:relative;display:flex;align-items:center;color:white;overflow:hidden;background:#333}
+.about-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,15,14,.78),rgba(14,15,14,.12)),url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=85") center 35%/cover}
+.about-hero-content{position:relative;width:min(1120px,calc(100% - 48px));margin:auto;padding:90px 0}
+.about-hero h1{font:400 clamp(52px,8vw,100px)/.98 var(--serif);letter-spacing:-.055em;margin:0}
+.about-hero p:not(.account-eyebrow){color:rgba(255,255,255,.82);max-width:450px;font-size:12px;line-height:1.9;margin:25px 0 30px}
+.about-intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start;padding:100px 0}
+.about-intro-copy p{color:var(--muted);font-size:12px;line-height:2;margin-top:0}
+.about-values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:100px}
+.about-value{border-top:1px solid var(--ink);padding-top:18px}
+.about-value span{color:var(--accent);font-size:11px;letter-spacing:.1em}
+.about-value h3{font:400 24px var(--serif);margin:18px 0 10px}
+.about-value p{color:var(--muted);font-size:11px;line-height:1.8;margin:0}
+.about-quote{background:#d9cbb8;text-align:center;padding:75px 20px}
+.about-quote blockquote{font-size:clamp(34px,5vw,58px)}
+@media(max-width:760px){.account-shell{width:calc(100% - 36px);padding:50px 0 65px}.account-layout{grid-template-columns:1fr}.account-visual{min-height:260px}.account-visual-copy{bottom:22px}.account-visual-copy h2{font-size:37px}.account-form-panel{padding:30px 23px}.profile-layout{grid-template-columns:1fr;gap:18px}.profile-sidebar{padding:20px}.profile-nav{grid-template-columns:1fr 1fr;column-gap:18px}.profile-fields{grid-template-columns:1fr;gap:13px}.about-hero{min-height:500px}.about-intro{grid-template-columns:1fr;gap:22px;padding:65px 0}.about-values{grid-template-columns:1fr;gap:30px;padding-bottom:65px}}
